@@ -1,4 +1,4 @@
-const math = require('./math')
+const equation = require('./equations')
 const readlineSync = require('readline-sync');
 
 const menu = () => {
@@ -27,16 +27,16 @@ const userInput = () => {
 const userSelection = (action, num1, num2) => {
     switch(action) {
         case 1:
-            result = math.add(num1, num2)
+            result = equation.add(num1, num2)
             break;
         case 2:
-            result = math.subtract(num1, num2)
+            result = equation.subtract(num1, num2)
             break;
         case 3:
-            result = math.multiply(num1, num2)
+            result = equation.multiply(num1, num2)
             break;
         case 4:
-            result = math.divide(num1, num2)
+            result = equation.divide(num1, num2)
             break;
         default:
             console.log('Sorry wrong option chosen.')
